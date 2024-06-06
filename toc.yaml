@@ -4,16 +4,16 @@
 ---
 toc:
   properties:
-    subcollection: <repo-name>
-    industry: industry-value
-    use-case: use-case-value
-    compliance: compliance-value
+    subcollection: pattern-classic-edge-gateway
+    industry: Network
+    # use-case: use-case-value
+    # compliance: compliance-value
     audience: solution
     content-type: deployment
-    href: /docs/<repo-name>
-    path: <repo-name>
-    description: Pattern description
-    label: Pattern name
+    href: /docs/pattern-classic-edge-gateway
+    path: pattern-classic-edge-gateway
+    description: Classic edge gateway with PowerVS and VPC
+    label: Classic edge gateway with PowerVS and VPC
   entries:
   - navgroup:
       id: overview
