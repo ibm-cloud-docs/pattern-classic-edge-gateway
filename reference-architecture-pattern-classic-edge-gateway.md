@@ -37,7 +37,7 @@ This reference architecture is used to force all network traffic to flow through
 
 This architecture will describe on-premises data center(s) connectivity into {{site.data.keyword.cloud_notm}} Classic, with workloads in classic, PowerVS, and VPC. The diagram includes examples to show where workload compute instances, proxy servers and jump servers would reside. Within the diagram, there are identifying numbers indicating key components in the description below.
 
-![Illustrates Classic edge gateway solution architecture](image/classic edge.svg){: caption="Figure 1. Classic edge gateway solution architecture" caption-side="bottom"}
+![Illustrates Classic edge gateway solution architecture](image/classic-edge.svg){: caption="Figure 1. Classic edge gateway solution architecture" caption-side="bottom"}
 
 
 1.  Client network connectivity from on-premises using redundant Direct Links.
@@ -67,7 +67,7 @@ Following the [{{site.data.keyword.arch_framework}}](/docs/architecture-framewor
 - **Service management:** Monitoring, Logging, Auditing, Alerting, Event Management
 
 ![Illustrates a detailed network and component architecture for a
-Classic edge gateway solution architecture](image/heat map.svg){: caption="Figure 2. Classic edge gateway design scope" caption-side="bottom"}
+Classic edge gateway solution architecture](image/heat-map.svg){: caption="Figure 2. Classic edge gateway design scope" caption-side="bottom"}
 
 The Architecture Framework provides a consistent approach to design cloud solutions by addressing requirements across a set of "aspects" and "domains", which are technology-agnostic architectural areas that need to be considered for any enterprise solution. See [Introduction to the {{site.data.keyword.arch_framework}}](/docs/architecture-framework?topic=architecture-framework-intro) for more details.
 

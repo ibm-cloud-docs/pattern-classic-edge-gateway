@@ -213,14 +213,14 @@ In {{site.data.keyword.cloud_notm}} classic, virtual route forwarding (VRF) must
 
 When the source address is not an {{site.data.keyword.IBM_notm}} assigned IP address, a proxy server in classic is used as an intermediary allowing access to cloud services.
 
-Verify that [Private Service endpoints are available for your cloud services](/docs/account?topic=account-vrf-service-endpoint&interface=ui).
+Verify that [Private Service endpoints](/docs/account?topic=account-vrf-service-endpoint&interface=ui) are available for the cloud services.
 
 ### Virtual Private Endpoint for VPC
 {: #VPE}
 
 {{site.data.keyword.cloud_notm}} {{site.daata.keyword.vpe_full}} enables you to connect to supported {{site.data.keyword.cloud_notm}} services from your VPC network by using the IP addresses of your choosing, allocated from a subnet within your VPC.
 
-Learn more on [{{site.daata.keyword.vpe_full}}](/docs/vpc?topic=vpc-about-vpe).
+Learn more on [{{site.data.keyword.vpe_full}}](/docs/vpc?topic=vpc-about-vpe).
 
 Verify that cloud services are VPE for VPC [enabled](/docs/vpc?topic=vpc-vpe-supported-services#vpe-enabled-supported-services).
 
