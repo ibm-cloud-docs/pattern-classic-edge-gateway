@@ -1,27 +1,25 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-01-23"
+  years: 2024, 2024
+lastupdated: "2024-06-07"
 
-subcollection: <repo-name>
+subcollection: pattern-classic-edge-gateway
 
-keywords:
+keywords: network, VPC, PowerVS, Classic edge gateway
 
 ---
 
 {{site.data.keyword.attribute-definition-list}}
 
+
 # Architecture decisions for compute
-{: #compute-decisions}
+{: #AD-compute}
 
+The following are compute architecture decisions for the Classic edge gateway pattern.
 
-
-| Architecture decision| Requirement| Option |Decision| Rationale|
-|---|---|---|---|---|
-|Bare metal servers| text | text | text | text |
-|Virtual servers| text | text | text | text |
-|Virtualization| text | text | text | text |
-|Containers| text | text | text | text |
-|Serverless| text | text | text | text |
-{: caption="Table 1. Architecture decisions for compute" caption-side="bottom"}
+| Architecture decision | Requirement                                                            | Options                                 | Decision   | Rationale                                    |
+|---------------------------|----------------------------------------------------------------------------|---------------------------------------------|----------------|--------------------------------------------------|
+| Compute: Bastion host     | Secure connection to manage internal systems and centralize access control | \*\*·\*\*Bare Metal \*\*·\*\*Virtual Server | Virtual Server | flexible compute resources to meet compute needs |
+| Compute: Proxy server     | Provide access to service endpoints from IPs not assigned by {{site.data.keyword.cloud_notm}}     | \*\*·\*\*Bare Metal \*\*·\*\*Virtual Server | Virtual Server | flexible compute resources to meet compute needs |
+{: caption="Table 1. Classic edge gateway compute architecture decisions"}

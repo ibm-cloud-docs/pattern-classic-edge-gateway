@@ -1,47 +1,36 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-01-23"
+  years: 2024, 2024
+lastupdated: "2024-06-07"
 
-subcollection: <repo-name>
+subcollection: pattern-classic-edge-gateway
 
-keywords:
+keywords: network, VPC, PowerVS, Classic edge gateway
 
 ---
 
+{{site.data.keyword.attribute-definition-list}}
+
 # Architecture decisions for resiliency
-{: #resiliency-architecture}
+{: #AD-resiliency}
 
-The following sections summarize the resiliency architecture decisions for workloads deployed on IBM Cloud VPC infrastructure.
+The following are resiliency architecture decisions for the Classic edge gateway pattern.
 
-## Architecture decisions for high availability
-{: #high-availability}
+## Architecture decisions for Network Resiliency
+{: #AD-network-resiliency}
 
-| Architecture decision | Requirement | Option | Decision | Rationale |
-| -------------- | -------------- | -------------- | -------------- | -------------- |
-| High availability deployment | * Ensure availability of resources if outages occur. \n * Support SLA targets for availability. | - Single zone, single region \n - Multi zone, single region \n - Multi-zone, multi region | text | text|
-| High availability infrastructure | * Ensure availability of infrastructure resources if outages occur. \n * Support SLA targets for infrastructure availability. | text | text | text|
-| High availability application and database | * Ensure availability of application resources if outages occur. \n * Support SLA targets for application availability. | text | text | text|
-{: caption="Table 1. High availability architecture decisions" caption-side="bottom"}
-
-## Architecture decisions for backup and restore
-{: #backup-and-restore}
-
-| Architecture decision | Requirement | Option | Decision | Rationale |
-| -------------- | -------------- | -------------- | -------------- | -------------- |
-| Infrastructure backup  | Backup images to enable recovery. | text | text | text |
-| Database backup | Create transaction-consistent database backups to enable recovery of database tier if unplanned outages occur. |text | text | text |
-| File backup | Create file system backups |text | text | text |
-| Backup automation | Schedule regular database backups based on RPO requirements to enable data recovery if unplanned outages occur. |text | text | text |
-{: caption="Table 2. Backup and restore architecture decisions" caption-side="bottom"}
+| Architecture decision           | Requirement                                                                                                       | Options                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Decision                                                 | Rationale                                                                                                                                                                   |
+|-------------------------------------|-----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| High Availability Network path      | Ensure availability of resources if outages occurs. Support SLA targets for availability                              | Single {{site.data.keyword.dl_full_notm}} Dedicated Single {{site.data.keyword.dl_full_notm}} Connect Two {{site.data.keyword.dl_full_notm}} Dedicated Two {{site.data.keyword.dl_full_notm}} Connect                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Two {{site.data.keyword.dl_full_notm}} Connect                            | Two {{site.data.keyword.dl_full_notm}} Connect provides a cost effective resilient solution with a short deployment interval and is flexible to meet both hybrid and multi-cloud strategies. |
+| High Availability Gateway Appliance | Ensure availability of infrastructure resources if outages occur. Support SLA targets for infrastructure availability | [Gateway Appliance in Classic](/docs/gateway-appliance?topic=gateway-appliance-getting-started-ga)  \n - [Juniper vSRX](/docs/vsrx?topic=vsrx-getting-started)  \n - [Virtual Router Appliance](/docs/virtual-router-appliance?topic=virtual-router-appliance-getting-started-vra)  \n - [FortiGate FSA 10 Gbps](/docs/fortigate-10g?topic=fortigate-10g-getting-started)  \n - [FortiGate vFSA](/docs/vfsa?topic=vfsa-getting-started)  \n - Bring Your Own Gateway ([BYOG](/docs/gateway-appliance?topic=gateway-appliance-order-byoa))  \n Bare Metal (including Checkpoint, Cisco, Palo Alto) | Deploy Gateway Appliance of choice in high availability pair | Ensures if one appliance is unavailable access is still available through remaining gateway appliance.                                                                          |
+| High availability path detection    | Ensure the quickest traffic path recovery                                                                             | Bidirectional Forwarding Detection (BFD)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Bidirectional Forwarding Detection (BFD)                     | Provides a much faster way of detecting link failures compared to the built-in mechanisms within routing protocols.                                                             |
+{: caption="Table 1. Classic edge gateway resiliency architecture decisions"}
 
 ## Architecture decisions for disaster recovery
-{: #disaster recovery}
+{: #AD-DR}
 
-| Architecture decision | Requirement | Option | Decision | Rationale |
-| -------------- | -------------- | -------------- | -------------- | -------------- |
-| Disaster recovery - application | Application disaster recovery capability in secondary region to meet RTO/RPO requirements| text | text | text |
-| Disaster recovery - database                        | Database recovery capability in secondary region | text | Continuous replication of data from a primary to a secondary system in a separate region, including in-memory loading, system replication facilitates rapid failover in the event of a disaster|
-| Disaster recovery - infrastructure | Infrastructure disaster recovery capability in secondary region to meet RTO/RPO requirements| text | text | text |
-{: caption="Table 2. Disaster recovery architecture decisions" caption-side="bottom"}
+| Architecture decision | Requirement                                                                                                                            | Options                                                                                                                                                | Decision                         | Rationale                                                                                                       |
+|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| Disaster recovery network | Network disaster recovery capability in secondary region to meet recovery time objective (RTO) recovery point objective (RPO) requirements | \*\*·\*\*Single {{site.data.keyword.dl_full_notm}} Dedicated Single {{site.data.keyword.dl_full_notm}} Connect Two {{site.data.keyword.dl_full_notm}} Dedicated Two {{site.data.keyword.dl_full_notm}} Connect | Single {{site.data.keyword.dl_full_notm}} Connect | Provides a cost effective and flexible connection into a second region, with metered and unmetered billing options. |
+{: caption="Table 2. Classic edge gateway disaster recovery architecture decisions"}

@@ -1,12 +1,12 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-01-23"
+  years: 2024, 2024
+lastupdated: "2024-06-07"
 
-subcollection: <repo-name>
+subcollection: pattern-classic-edge-gateway
 
-keywords:
+keywords: network, VPC, PowerVS, Classic edge gateway
 
 ---
 
@@ -15,24 +15,16 @@ keywords:
 # Overview
 {: #overview}
 
+The most common network scenario is to integrate on-premise access with Classic Infrastructure, Virtual Private Cloud (VPC), and PowerVS workloads within the {{site.data.keyword.cloud_notm}}. The objective of this pattern is to:
 
+-   Illustrate on-premise network connectivity to a Classic edge gateway with a Virtual Private Cloud (VPC) and a PowerVS workspace in {{site.data.keyword.cloud_notm}}.
+-   Provide an IBM Solution Design for the Network elements required when deploying in {{site.data.keyword.cloud_notm}}.
+-   Securely connect your external locations to {{site.data.keyword.cloud_notm}} with {{site.data.keyword.dl_short}}, enabling access to Classic infrastructure, Virtual Private Cloud (VPC), and PowerVS resources.
+-   Focus on {{site.data.keyword.cloud_notm}} Network elements, while ensuring requirements can be met from a performance, system availability, and connectivity perspective.
+
+NOTE: This approach is referred to as Classic edge gateway because all traffic flows to the classic gateway for inspection before it is allowed to pass to any downstream workloads within {{site.data.keyword.cloud_notm}}.
 
 This pattern is intended to:
-* Accelerate and simplify solution design by providing a standard IBM Cloud deployment architecture reference following the IBM Architecture Framework.
-* Provide a prescriptive, end-2-end enterprise-class solution design, with diagrams, component architecture decisions along with rationale for cloud component selection to meet enterprise requirements.
-* Ensure requirements can be met from a performance, system availability and security perspective.
 
-
-
-
-
-Following the Architecture Framework, the `<Pattern Name>` covers design considerations and architecture decisions for the following aspects and domains:
-
-- Compute: Virtual Servers
-- Storage: Primary Storage, Backup Storage
-- Networking: Enterprise Connectivity, Segmentation and Isolation, Cloud Native Connectivity, Load Balancing, DNS
-- Security: Data Security, Identity and Access Management, Application Security, Infrastructure and Endpoint Security
-- Resiliency: High Availability, Backup and Restore
-- Service Management: Monitoring, Logging, Auditing, Alerting
-
-The Architecture Framework provides a consistent approach to design cloud solutions by addressing requirements across a set of "aspects" and "domains", which are technology-agnostic architectural areas that need to be considered for any enterprise solution. For more details, see [Introduction to the Architecture Framework](/docs/architecture-framework).
+-   Accelerate and simplify solution design by providing a standard {{site.data.keyword.cloud_notm}} deployment architecture reference following the [IBM {{site.data.keyword.arch_framework}}](/docs/architecture-framework).
+-   Provide a prescriptive, end-to-end enterprise-class solution design, with diagrams, component architecture decisions along with rationale for cloud component selection to meet enterprise requirements.

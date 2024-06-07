@@ -22,7 +22,7 @@ toc:
   - navgroup:
       id: architecture
       topics:
-      - reference-architecture-pattern-name.md
+      - reference-architecture-pattern-classic-edge-gateway.md
   - navgroup:
       id: plan
       topics:
