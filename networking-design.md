@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2024
-lastupdated: "2024-06-07"
+lastupdated: "2024-06-10"
 
 subcollection: pattern-classic-edge-gateway
 
@@ -165,7 +165,7 @@ Considerations Include:
 * Learn more about [{{site.data.keyword.loadbalancer_full}}](/docs/loadbalancer-service?topic=loadbalancer-service-about-ibm-cloud-load-balancer)
 * Learn more about [{{site.data.keyword.vpx_full}} Load Balancer](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-about-citrix-netscaler-vpx)
 
-{{site.data.keyword.IBM_notm}} {{site.data.keyword.vpc_full}} (VPC) offers three load balancer options which include: {{site.data.keyword.nlb_full}}, {{site.data.keyword.alb_full}}, and the F5 BIG-IP Virtual Edition for VPC.
+{{site.data.keyword.vpc_full}} (VPC) offers three load balancer options which include: {{site.data.keyword.nlb_full}}, {{site.data.keyword.alb_full}}, and the F5 BIG-IP Virtual Edition for VPC.
 
 * Explore [VPC load balancer options](/docs/vpc?topic=vpc-nlb-vs-elb#load-balancer-types).
 * Refer to the VPC [load balancer comparison chart](/docs/vpc?topic=vpc-nlb-vs-elb#lb-comparison-chart) for more information.
