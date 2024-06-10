@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2024
-lastupdated: "2024-06-07"
+lastupdated: "2024-06-10"
 
 subcollection: pattern-classic-edge-gateway
 
@@ -22,8 +22,8 @@ The following are network architecture decisions for the Classic edge gateway pa
 
 | Architecture decision | Requirement                                                                                | Options                                                                                   | Decision                                     | Rationale                                                                                       |
 |---------------------------|------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|--------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Management connectivity   | Provide secure, encrypted connectivity to the cloud’s private network for management purposes. | \*\*·\*\*SSL VPN \*\*·\*\*IPsec VPN \*\*·\*\*Site-to-Site VPN on Gateway appliance in Classic | Site-to-Site VPN on Gateway appliance in Classic | Secure and suitable for production-level performance                                                |
-| Enterprise connectivity   | Provide connectivity between client enterprise and {{site.data.keyword.cloud_notm}}.                                  | \*\*·\*\*Direct Link Connect \*\*·\*\*Direct Link Dedicated                                   | Direct Link Connect                              | cost effective, quicker deployment time, and supports hybrid and multi-cloud deployment strategies. |
+| Management connectivity   | Provide secure, encrypted connectivity to the cloud’s private network for management purposes. | - SSL VPN  \n - IPsec VPN  \n - Site-to-Site VPN on Gateway appliance in Classic | Site-to-Site VPN on Gateway appliance in Classic | Secure and suitable for production-level performance                                                |
+| Enterprise connectivity   | Provide connectivity between client enterprise and {{site.data.keyword.cloud_notm}}.                                  | - Direct Link Connect  \n - Direct Link Dedicated                                   | Direct Link Connect                              | cost effective, quicker deployment time, and supports hybrid and multi-cloud deployment strategies. |
 {: caption="Table 1. Classic edge gateway network enterprise connectivity architecture decisions"}
 
 ## Architecture decisions for BYOIP and Edge Gateways
@@ -49,7 +49,7 @@ The following are network architecture decisions for the Classic edge gateway pa
 
 | Architecture decision                     | Requirement                             | Options                                                                      | Decision                    | Rationale                                                                                  |
 |-----------------------------------------------|---------------------------------------------|----------------------------------------------------------------------------------|---------------------------------|------------------------------------------------------------------------------------------------|
-| Cloud Native Connectivity (to cloud services) | Provide secure connection to Cloud Services | \*\*·\*\*Private Cloud Service endpoints \*\*·\*\*Public Cloud Service Endpoints | Private Cloud Service endpoints | Provides private connectivity to cloud services offering enhanced security and cost efficiency |
+| Cloud Native Connectivity (to cloud services) | Provide secure connection to Cloud Services | - Private Cloud Service endpoints  \n - Public Cloud Service Endpoints | Private Cloud Service endpoints | Provides private connectivity to cloud services offering enhanced security and cost efficiency |
 {: caption="Table 4. Classic edge gateway network cloud native connectivity architecture decisions"}
 
 ## Architecture decisions for load balancing
@@ -57,7 +57,7 @@ The following are network architecture decisions for the Classic edge gateway pa
 
 | Architecture decision       | Requirement                                                                                                            | Options                                                                                                                      | Decision                  | Rationale                                                                                                  |
 |---------------------------------|----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|-------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Global Load balancing           | Load balancing over the public network across two regions in the event of an outage (DR) for failover to the other region. | \*\*·\*\*Cloud Internet Service (CIS) \*\*·\*\*DNS services                                                                      | Cloud internet Services (CIS) | Provides a cost-effective solution while offering additional security features                                 |
+| Global Load balancing           | Load balancing over the public network across two regions in the event of an outage (DR) for failover to the other region. | - {{site.data.keyword.cis_full_notm}} (CIS)  \n - DNS services                                                                      | Cloud internet Services (CIS) | Provides a cost-effective solution while offering additional security features                                 |
 | Load balancing (public/private) | Load balancing workloads across multiple workload instances or zones over the public network.                              | IBM Cloud Load Balancer Citrix Netscaler VPX Network Load Balancer (NLB) Application Load Balancer (ALB) F5 Big-IP Load Balancer | Application Load Balancer     | Cost effectively provides a wide range of layer 7 load balancing functions for both public and private traffic |
 {: caption="Table 5. Classic edge gateway network load balancing architecture decisions"}
 
@@ -66,6 +66,6 @@ The following are network architecture decisions for the Classic edge gateway pa
 
 | Architecture decision | Requirement                                                                                 | Options                                                                                                                                                  | Decision | Rationale                                                   |
 |---------------------------|-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------|
-| Public DNS                | Provide DNS resolution to support the use of hostnames instead of IP addresses for applications | - DNS via cloud portal \*\*·\*\*Cloud Internet Services (CIS) \*\*·\*\*Third Party DNS provider \*\*·\*\*Custom DNS on Classic VSI \*\*·\*\*DNS services | DNS Services | Cost effective and reliable                                     |
-| Private DNS               | Provide DNS resolution within {{site.data.keyword.cloud_notm}}'s private network                                       | \*\*·\*\*Custom DNS on VSI \*\*·\*\*DNS on Gateway appliance \*\*·\*\*DNS services in VPC                                                                    | DNS services | Cost effective, reliable, and supports complex DNS requirements |
+| Public DNS                | Provide DNS resolution to support the use of hostnames instead of IP addresses for applications | - DNS via cloud portal  \n - {{site.data.keyword.cis_full_notm}} (CIS)  \n - Third Party DNS provider  \n - Custom DNS on Classic VSI  \n - DNS services | DNS Services | Cost effective and reliable                                     |
+| Private DNS               | Provide DNS resolution within {{site.data.keyword.cloud_notm}}'s private network                                       | - Custom DNS on VSI  \n - DNS on Gateway appliance  \n - DNS services in VPC                                                                    | DNS services | Cost effective, reliable, and supports complex DNS requirements |
 {: caption="Table 6. Classic edge gateway network Domain Name System architecture decisions"}
