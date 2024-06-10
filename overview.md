@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2024
-lastupdated: "2024-06-07"
+lastupdated: "2024-06-10"
 
 subcollection: pattern-classic-edge-gateway
 
@@ -22,7 +22,8 @@ The most common network scenario is to integrate on-premise access with Classic 
 -   Securely connect your external locations to {{site.data.keyword.cloud_notm}} with {{site.data.keyword.dl_short}}, enabling access to Classic infrastructure, Virtual Private Cloud (VPC), and PowerVS resources.
 -   Focus on {{site.data.keyword.cloud_notm}} Network elements, while ensuring requirements can be met from a performance, system availability, and connectivity perspective.
 
-NOTE: This approach is referred to as Classic edge gateway because all traffic flows to the classic gateway for inspection before it is allowed to pass to any downstream workloads within {{site.data.keyword.cloud_notm}}.
+This approach is referred to as Classic edge gateway because all traffic flows to the classic gateway for inspection before it is allowed to pass to any downstream workloads within {{site.data.keyword.cloud_notm}}.
+{: note}
 
 This pattern is intended to:
 
