@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2024
-lastupdated: "2024-06-10"
+lastupdated: "2024-06-17"
 
 subcollection: pattern-classic-edge-gateway
 
@@ -41,19 +41,19 @@ This architecture will describe on-premises data center(s) connectivity into {{s
 
 
 1.  Client network connectivity from on-premises using redundant Direct Links.
-2.  Gateway provides routing and security functions.
-3.  Optional network path is accomplished through site-to-site VPN terminated on Classic Gateway.
-4.  Power Virtual Server workspace with Power Edge Router (PER), subnets, and resources
-5.  GREa tunnel allows BYOIP to be advertised between Classic and on-premises.
-6.  GREb tunnel allows BYOIP to be advertised between Classic and the PowerVS and VPC environments.
-7.  GREc tunnel allows BYOIP to be advertised between Classic environments in separate regions.
+2.  The gateway provides routing and security functions.
+3.  An optional network path is accomplished through a site-to-site VPN terminated on Classic Gateway.
+4.  Power Virtual Server workspace with Power Edge Router (PER), subnets, and resources.
+5.  The GREa tunnel allows BYOIP to be advertised between Classic and on-premises.
+6.  The GREb tunnel allows BYOIP to be advertised between Classic and the PowerVS and VPC environments.
+7.  The GREc tunnel allows BYOIP to be advertised between Classic environments in separate regions.
 8.  Virtual Bastion host for remote administrative access.
-9.  DNS services
-10. Proxy Server as an intermediary between on-prem and cloud services.
-11. Cloud Internet Services (CIS) to enhance the security, performance, and reliability of internet-facing applications and websites.
-12. Compute Instance in Virtual Private Cloud
-13. Virtual Private Endpoint for VPC
-14. Application load balancer
+9.  DNS services.
+10. A proxy Server is used as an intermediary between on-prem and cloud services.
+11. Cloud Internet Services (CIS) is used to enhance the security, performance, and reliability of internet-facing applications and websites.
+12. A compute Instance in Virtual Private Cloud.
+13. A Virtual Private Endpoint for VPC.
+14. An Application load balancer.
 
 ## Design scope
 {: #design-scope}
@@ -101,7 +101,7 @@ The following represents a baseline set of requirements that are applicable to m
 |                        | [Gateway Appliance in Classic](/docs/gateway-appliance?topic=gateway-appliance-getting-started-ga)  \n - [{{site.data.keyword.vsrx}}](/docs/vsrx?topic=vsrx-getting-started)  \n -  [{{site.data.keyword.vra}}](/docs/virtual-router-appliance?topic=virtual-router-appliance-getting-started-vra)  \n - [FortiGate FSA 10 Gbps](/docs/fortigate-10g?topic=fortigate-10g-getting-started)  \n - [FortiGate vFSA](/docs/vfsa?topic=vfsa-getting-started)  \n - Bring Your Own Gateway ([BYOG](/docs/gateway-appliance?topic=gateway-appliance-order-byoa))  \n Bare Metal (including Checkpoint, Cisco, Palo Alto) | Provides router, firewall, and VPN gateway functions for secure and reliable connectivity to cloud resources.                                   |
 |                        | Generic Routing Encapsulation (GRE) tunnels                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Supports Bring Your Own IP (BYOIP) communication between on-premise, Classic Infrastructure, and PowerVS.                                       |
 |                        | [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)  \n - Direct Link Connect                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Connect on-premise networks to the {{site.data.keyword.cloud_notm}} using physical telco connections or virtual exchange services.                                     |
-|                        | [Load Balancers](/docs/vpc?topic=vpc-nlb-vs-elb)  \n - Network load balancer  \n - Application load balancer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Application Load Balancing for web servers, app servers, and database servers                                                                   |
+|                        | [Load Balancers](/docs/vpc?topic=vpc-nlb-vs-elb)  \n - Application load balancer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Application Load Balancing for web servers, app servers, and database servers                                                                   |
 |                        | [Private Service Endpoints](/docs/account?topic=account-vrf-service-endpoint&interface=ui#use-service-endpoint)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Connect directly to cloud services without using the public network                                                                             |
 |                        | [{{site.data.keyword.cis_short}}](/docs/cis?topic=cis-getting-started)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Public Load balancing of web server traffic across regions                                                                                      |
 |                        | [DNS Services](/docs/dns-svcs?topic=dns-svcs-about-dns-services)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | The Domain Name System (DNS) to associate human-friendly domain names with IP addresses                                                         |

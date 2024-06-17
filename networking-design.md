@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2024
-lastupdated: "2024-06-10"
+lastupdated: "2024-06-17"
 
 subcollection: pattern-classic-edge-gateway
 
@@ -59,7 +59,10 @@ Choosing the right firewall is crucial for safeguarding your network. Review the
 - Virtual appliance versus hardware firewalls: Evaluate cloud-based options for flexibility and scalability but consider throughput and port sizes for latency and bottlenecks.
 - Single versus High Availability: Consider single points of failure and service level requirements.
 
-{{site.data.keyword.IBM_notm}} classic data centers support four gateway appliance and firewall options including Juniper vSRX, Virtual Router Appliance, FortiGate (FAS 10 Gbps and vFSA), and bring your own gateway appliance (BYOG - Checkpoint, Cisco, and Palo Alto). This pattern supports personal choice based on appliance functional requirements and operational expertise.
+{{site.data.keyword.IBM_notm}} classic data centers support four gateway appliance and firewall options including Juniper vSRX, Virtual Router Appliance, FortiGate (FAS 10 Gbps and vFSA), and bring your own gateway appliance (BYOG - Checkpoint, Cisco, and Palo Alto).
+
+This pattern supports personal choice based on appliance functional requirements and operational expertise.
+{: note}
 
 Explore and compare [gateway options](/docs/fortigate-10g?topic=fortigate-10g-exploring-firewalls) available in {{site.data.keyword.cloud_notm}}.
 
@@ -75,13 +78,13 @@ GRE tunnels support the Bring Your Own IP (BYOIP) requirement.
 3.  A GRE tunnel is created between the gateway and a customer router.
 4.  192.168.xx.xx (BYOIP) packets are encapsulated by 10.1.x.x, IBM assigned IP, which is routed through the BCR over the GRE and unencapsulated on the other side.
 
-{{site.data.keyword.BluDirectLink}} does not offer BYOIP on the private network. The {{site.data.keyword.IBM_notm}} Cloud backbone advertises the customer’s available routes that are assigned by {{site.data.keyword.IBM_notm}} to their remote networks. Traffic with a destination IP address that is not assigned by {{site.data.keyword.cloud_notm}} (10.0.0.0/8) is dropped by {{site.data.keyword.cloud_notm}}. Traffic can be encapsulated between the remote client network and the {{site.data.keyword.cloud_notm}} network for nonassigned {{site.data.keyword.cloud_notm}} addresses by establishing GRE tunnels between the gateway and a customer router. This allows non-IBM assigned IP addresses to be passed back to the on-premises environment.
+{{site.data.keyword.BluDirectLink}} does not offer BYOIP on the private network. The {{site.data.keyword.IBM_notm}} Cloud backbone advertises the customer’s available routes that are assigned by {{site.data.keyword.IBM_notm}} to their remote networks. Traffic with a destination IP address that is not assigned by {{site.data.keyword.cloud_notm}} (10.0.0.0/8) is dropped by {{site.data.keyword.cloud_notm}}. Traffic can be encapsulated between the remote client network and the {{site.data.keyword.cloud_notm}} network for nonassigned {{site.data.keyword.cloud_notm}} addresses by establishing GRE tunnels between the gateway and the transit gateway. This allows non-IBM assigned IP addresses to be passed back to the on-premises environment.
 
 A second GRE is required between the classic gateway and the transit gateway when nonassigned {{site.data.keyword.cloud_notm}} addresses are used in the VPC or {{site.data.keyword.powerSys_notm}} environment.
 
 A third GRE is used to share nonassigned {{site.data.keyword.cloud_notm}} addresses between classic gateways in separate regions. When resiliency is required, GREs can be configured on two devices in a high availability pair to eliminate single points of failure. For more information, see [High availability and disaster recovery](/docs/transit-gateway?topic=transit-gateway-ha-dr#high-availability) and [{{site.data.keyword.cloud_notm}} public and private IP ranges](/docs/cloud-infrastructure?topic=cloud-infrastructure-ibm-cloud-ip-ranges).
 
-When you configure a GRE connection on a transit gateway, you must specify the availability zone. For a robust high availability solution, configure multiple GRE connections that use different availability zones.
+When you configure a GRE connection on a transit gateway, you must specify the availability zone. For a robust high availability solution, configure multiple GRE connections that use different availability zones. Learn how to create a [redundant GRE](/docs/transit-gateway?topic=transit-gateway-redundant-gre-connection&interface=ui).
 {: important}
 
 ## Enterprise Connectivity
