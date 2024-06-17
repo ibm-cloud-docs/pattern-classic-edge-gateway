@@ -221,7 +221,7 @@ Verify that [Private Service endpoints](/docs/account?topic=account-vrf-service-
 ### Virtual Private Endpoint for VPC
 {: #VPE}
 
-{{site.data.keyword.cloud_notm}} {{site.daata.keyword.vpe_full}} enables you to connect to supported {{site.data.keyword.cloud_notm}} services from your VPC network by using the IP addresses of your choosing, allocated from a subnet within your VPC.
+{{site.data.keyword.cloud_notm}} {{site.data.keyword.vpe_full}} enables you to connect to supported {{site.data.keyword.cloud_notm}} services from your VPC network by using the IP addresses of your choosing, allocated from a subnet within your VPC.
 
 Learn more on [{{site.data.keyword.vpe_full}}](/docs/vpc?topic=vpc-about-vpe).
 

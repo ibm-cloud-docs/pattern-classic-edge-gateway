@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2024
-lastupdated: "2024-06-07"
+lastupdated: "2024-06-17"
 
 subcollection: pattern-classic-edge-gateway
 
@@ -20,7 +20,7 @@ The following are security design considerations for the Classic edge gateway pa
 ## Identity and Access Management (IAM)
 {: #IAM}
 
-{{site.data.keyword.iamshort}} provides role-based access controls (RBAC) and is part of the zero trust strategy that allows for least privileged access to help support regulatory and compliancy requirements. {{site.data.keyword.IBM&reg}} Security Verify can be added to support multi-factor authentication. For more information, see [{{site.data.keyword.iamshort}} (IAM)](/docs/account?topic=account-iamoverview) and [{{site.data.keyword.IBM&reg}}  Security Verify](https://www.ibm.com/verify){: external}.
+{{site.data.keyword.iamshort}} provides role-based access controls (RBAC) and is part of the zero trust strategy that allows for least privileged access to help support regulatory and compliancy requirements. {{site.data.keyword.Bluemix}} Security Verify can be added to support multi-factor authentication. For more information, see [{{site.data.keyword.iamshort}} (IAM)](/docs/account?topic=account-iamoverview) and [{{site.data.keyword.Bluemix}}  Security Verify](https://www.ibm.com/verify){: external}.
 
 Click to learn more about [IAM Roles](/docs/account?topic=account-userroles).
 

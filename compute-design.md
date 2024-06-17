@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2024
-lastupdated: "2024-06-07"
+lastupdated: "2024-06-17"
 
 subcollection: pattern-classic-edge-gateway
 
@@ -40,7 +40,7 @@ Based on workload and specific requirements, select from a range of Virtual Serv
 ## Jump Server and Bastion Hosts
 {: #jump-bastion}
 
-Infrastructure requirements for Linux and Windows jump servers and bastion hosts can vary based on factors such as the number of concurrent users, the specific use case, and the applications or services that run on the server. An average jump server with 8 CPU and 16 GB of RAM, can support 25 concurrent sessions of any type (100 serial-over-LAN sessions, 200 Telnet, or SSH sessions). More sessions can be supported by larger server specifications.
+Infrastructure requirements for Linux and Windows jump servers and bastion hosts can vary based on factors such as the number of concurrent users, the specific use case, and the applications or services that run on the server. A typical jump server with 8 CPU and 16 GB of RAM, can support 25 concurrent sessions of any type (100 serial-over-LAN sessions, 200 Telnet, or SSH sessions). More sessions can be supported by larger server specifications.
 
 Table 1 contains general jump server and bastion host sizing guidelines for Ubuntu LTS, CentOS, or Debian Bastion Hosts:
 
