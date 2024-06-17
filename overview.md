@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2024
-lastupdated: "2024-06-10"
+lastupdated: "2024-06-17"
 
 subcollection: pattern-classic-edge-gateway
 
@@ -15,9 +15,9 @@ keywords: network, VPC, PowerVS, Classic edge gateway
 # Overview
 {: #overview}
 
-The most common network scenario is to integrate on-premise access with Classic Infrastructure, Virtual Private Cloud (VPC), and PowerVS workloads within the {{site.data.keyword.cloud_notm}}. The objective of this pattern is to:
+The most common network scenario is to integrate on-premise access with Classic Infrastructure, Virtual Private Cloud (VPC), and Power VS workloads within the {{site.data.keyword.cloud_notm}}. The objective of this pattern is to:
 
--   Illustrate on-premise network connectivity to a Classic edge gateway with a Virtual Private Cloud (VPC) and a PowerVS workspace in {{site.data.keyword.cloud_notm}}.
+-   Illustrate on-premise network connectivity to a Classic edge gateway with a {{site.data.keyword.vpc_full}} (VPC) and a {{site.data.keyword.powerSysFull}} workspace in {{site.data.keyword.cloud_notm}}.
 -   Provide an IBM Solution Design for the Network elements required when deploying in {{site.data.keyword.cloud_notm}}.
 -   Securely connect your external locations to {{site.data.keyword.cloud_notm}} with {{site.data.keyword.dl_short}}, enabling access to Classic infrastructure, Virtual Private Cloud (VPC), and PowerVS resources.
 -   Focus on {{site.data.keyword.cloud_notm}} Network elements, while ensuring requirements can be met from a performance, system availability, and connectivity perspective.
