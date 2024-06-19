@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2024
-lastupdated: "2024-06-17"
+lastupdated: "2024-06-19"
 
 subcollection: pattern-classic-edge-gateway
 
@@ -20,31 +20,31 @@ The following are compute design considerations for the Classic edge gateway pat
 ## Workload Hosts (Classic, VPC, and PowerVS)
 {: #workload-hosts}
 
-Selecting the appropriate workload host in this architecture includes but is not limited to the following considerations regarding:
+Selecting the appropriate workload host in this architecture includes but is not limited to the following considerations:
 
--   Performance: CPU, Memory, storage options, and network speed.
--   Virtualization and tenancy: container, virtual or bare metal, multitenant or dedicated single tenant.
--   Security, availability, and cost considerations.
--   Application-specific certification or optimization requirements.
+-   Performance: CPU, memory, storage options, and network speed
+-   Virtualization and tenancy: container, virtual or bare metal, multitenant or dedicated single tenant
+-   Security, availability, and cost considerations
+-   Application-specific certification or optimization requirements
 
-Based on workload and specific requirements, select from a range of Virtual Servers, Bare Metal servers, containers and VMware-based solutions.
+Based on workload and specific requirements, select from a range of Virtual Servers, Bare Metal servers, containers, and VMware-based solutions. Explore the following documentation: 
 
-* Explore [{{site.data.keyword.baremetal_short}}](/docs/bare-metal?topic=bare-metal-about-bm)s for Classic.
-* Explore [{{site.data.keyword.virtualmachinesshort}}](/docs/virtual-servers?topic=virtual-servers-about-virtual-servers) for Classic.
-* Explore [{{site.data.keyword.containerlong_notm}}](/docs/containers?topic=containers-cluster-create-classic&interface=ui) and [{{site.data.keyword.openshiftlong_notm}}](/docs/openshift?topic=openshift-getting-started) for classic environments.
-* Explore [{{site.data.keyword.vmwaresolutions_full_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started).
-* Explore [{{site.data.keyword.powerSys_notm}}](/docs/power-iaas?topic=power-iaas-getting-started).
-* Explore [{{site.data.keyword.vsi_is_short}}](/docs/vpc?topic=vpc-about-advanced-virtual-servers) for VPC.
-* Explore [{{site.data.keyword.bm_is_short}}](/docs/vpc?topic=vpc-about-bare-metal-servers) for VPC.
+* [{{site.data.keyword.baremetal_short}}](/docs/bare-metal?topic=bare-metal-about-bm)s for Classic.
+* [{{site.data.keyword.virtualmachinesshort}}](/docs/virtual-servers?topic=virtual-servers-about-virtual-servers) for Classic.
+* [{{site.data.keyword.containerlong_notm}}](/docs/containers?topic=containers-cluster-create-classic&interface=ui) and [{{site.data.keyword.openshiftlong_notm}}](/docs/openshift?topic=openshift-getting-started) for classic environments.
+* [{{site.data.keyword.vmwaresolutions_full_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started).
+* [{{site.data.keyword.powerSys_notm}}](/docs/power-iaas?topic=power-iaas-getting-started).
+* [{{site.data.keyword.vsi_is_short}}](/docs/vpc?topic=vpc-about-advanced-virtual-servers) for VPC.
+* [{{site.data.keyword.bm_is_short}}](/docs/vpc?topic=vpc-about-bare-metal-servers) for VPC.
 
-## Jump Server and Bastion Hosts
+## Jump server and bastion hosts
 {: #jump-bastion}
 
-Infrastructure requirements for Linux and Windows jump servers and bastion hosts can vary based on factors such as the number of concurrent users, the specific use case, and the applications or services that run on the server. A typical jump server with 8 CPU and 16 GB of RAM, can support 25 concurrent sessions of any type (100 serial-over-LAN sessions, 200 Telnet, or SSH sessions). More sessions can be supported by larger server specifications.
+Infrastructure requirements for Linux and Windows jump servers and bastion hosts can vary based on factors such as the number of concurrent users, the specific use case, and the applications or services that run on the server. A typical jump server with 8 CPU and 16 GB of RAM can support 25 concurrent sessions of any type (100 serial-over-LAN sessions, 200 Telnet, or SSH sessions). More sessions are supported by larger server specifications.
 
-Table 1 contains general jump server and bastion host sizing guidelines for Ubuntu LTS, CentOS, or Debian Bastion Hosts:
+Table 1 contains general sizing guidelines for jump server and bastion host for Ubuntu LTS, CentOS, or Debian Bastion Hosts:
 
-| Traffic | Concurrent Users | Server Size               |
+| Traffic | Concurrent users | Server size               |
 |-------------|----------------------|-------------------------------|
 | Low         | 10-20                | 1-2 Cores CPU; 2-4 GB Memory  |
 | Moderate    | 30-50                | 2-4 Cores CPU; 4-8 GB Memory  |
@@ -68,7 +68,7 @@ Some key design considerations for a proxy server include:
 - Logging and monitoring: Decide what data to log for troubleshooting, security audits, and usage analysis.
 - Hardware: Select hardware with sufficient processing power, memory, and network bandwidth to handle expected traffic.
 - Scalability: Design the architecture to accommodate future growth in users and traffic volume.
-- High Availability: Consider redundancy measures to ensure that the proxy remains operational if there is a failure.
+- High availability: Consider redundancy measures to ensure that the proxy remains operational if there is a failure.
 
 Sizing considerations include:
 
