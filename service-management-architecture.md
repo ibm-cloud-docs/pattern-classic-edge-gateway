@@ -22,7 +22,7 @@ The following are the architecture decisions for service management for the clas
 
 | Architecture decision                                   | Requirement                                                                                          | Options                                                                          | Decision         | Rationale                                                        |
 |-------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|----------------------|----------------------------------------------------------------------|
-| Operational monitoring of cloud infrastructure and services | Monitor system health to detect issues that might impact the availability of the system and application. | - {{site.data.keyword.cloud_notm}} Health Dashboard  \n - IBM Cloud Monitoring (VPC)  \n - Bring Your Own monitoring tool | IBM Cloud Monitoring | IBM Cloud Monitoring provides a robust cloud native monitoring tool. |
+| Operational monitoring of cloud infrastructure and services | Monitor system health to detect issues that might impact the availability of the system and application. | - {{site.data.keyword.cloud_notm}} Health Dashboard  \n - IBM Cloud Monitoring  \n - Bring Your Own monitoring tool | IBM Cloud Monitoring | IBM Cloud Monitoring provides a robust cloud native monitoring tool. |
 {: caption="Table 1. Classic edge gateway service management monitoring architecture decisions"}
 
 ## Architecture decisions for logging
