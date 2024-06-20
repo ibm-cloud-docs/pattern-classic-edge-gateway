@@ -12,8 +12,8 @@ toc:
     content-type: deployment
     href: /docs/pattern-classic-edge-gateway
     path: pattern-classic-edge-gateway
-    description: Classic edge gateway with PowerVS and VPC
-    label: Classic edge gateway with PowerVS and VPC
+    description: Extending your enterprise network to IBM Cloud
+    label: Extending your enterprise network to IBM Cloud
   entries:
   - navgroup:
       id: overview
