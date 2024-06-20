@@ -1,0 +1,54 @@
+#  Rename this file to `toc.yaml`
+#  Make sure you include all nav file coding requirements
+#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
+---
+toc:
+  properties:
+    subcollection: pattern-classic-edge-gateway
+    industry: Network
+    # use-case: use-case-value
+    # compliance: compliance-value
+    audience: solution
+    content-type: deployment
+    href: /docs/pattern-classic-edge-gateway
+    path: pattern-classic-edge-gateway
+    description: Extending your enterprise network to IBM Cloud
+    label: Extending your enterprise network to IBM Cloud
+  entries:
+  - navgroup:
+      id: overview
+      topics:
+      - overview.md
+  - navgroup:
+      id: architecture
+      topics:
+      - reference-architecture-pattern-classic-edge-gateway.md
+  - navgroup:
+      id: plan
+      topics:
+      - topicgroup:
+          label: Design considerations
+          topics:
+          - topic: compute-design.md
+            navtitle: Compute
+          - topic: networking-design.md
+            navtitle: Networking
+          - topic: security-design.md
+            navtitle: Security
+          - topic: resiliency-design.md
+            navtitle: Resiliency
+          - topic: service-management-design.md
+            navtitle: Service management
+      - topicgroup:
+          label: Architecture decisions
+          topics:
+          - topic: compute-architecture.md
+            navtitle: Compute
+          - topic: networking-architecture.md
+            navtitle: Networking
+          - topic: security-architecture.md
+            navtitle: Security
+          - topic: resiliency-architecture.md
+            navtitle: Resiliency
+          - topic: service-management-architecture.md
+            navtitle: Service management
