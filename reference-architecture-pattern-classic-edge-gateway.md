@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2024
-lastupdated: "2024-06-27"
+lastupdated: "2024-07-26"
 
 subcollection: pattern-classic-edge-gateway
 
@@ -19,10 +19,9 @@ version: 1.0
 # See https://test.cloud.ibm.com/docs/get-coding?topic=get-coding-deploy-button
 # deployment-url:
 
-docs: /docs/pattern-sap-on-powervs
+docs: https://cloud.ibm.com/docs/pattern-classic-edge-gateway
 
 content-type: reference-architecture
-
 ---
 
 {{site.data.keyword.attribute-definition-list}}

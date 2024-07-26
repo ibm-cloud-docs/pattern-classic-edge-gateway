@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2024
-lastupdated: "2024-06-19"
+lastupdated: "2024-07-26"
 
 subcollection: pattern-classic-edge-gateway
 
@@ -43,8 +43,5 @@ For more information, see [Getting started with {{site.data.keyword.loganalysisl
 {: attention}
 
 Consider the need to record and monitor the activities and changes made inside the {{site.data.keyword.cloud_notm}} account to help investigating abnormal activity, critical actions, and to meet regulatory audit requirements. {{site.data.keyword.cloudaccesstraillong_notm}} monitors and manages activities in the {{site.data.keyword.cloud_notm}}. It provides a dashboard and notification for real-time monitoring. For more information, see [Getting started with {{site.data.keyword.cloudaccesstraillong_notm}}](/docs/activity-tracker?topic=activity-tracker-getting-started).
-
-* Explore details on [activity tracker](/docs/virtual-servers?topic=virtual-servers-at_events) events for virtual servers.
-* Explore details on an [activity tracker](/docs/bare-metal?topic=bare-metal-bm-at-events) for bare metal.
 
 Alternatively, third-party software such as Splunk and Datadog can be integrated with {{site.data.keyword.cloud_notm}} to provide security monitoring, compliance reporting, and operational intelligence.
