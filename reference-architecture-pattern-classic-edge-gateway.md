@@ -19,7 +19,7 @@ version: 1.0
 # See https://test.cloud.ibm.com/docs/get-coding?topic=get-coding-deploy-button
 # deployment-url:
 
-docs: https://cloud.ibm.com/docs/pattern-classic-edge-gateway
+docs: /docs/pattern-classic-edge-gateway
 
 content-type: reference-architecture
 ---
