@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2024
-lastupdated: "2024-06-27"
+lastupdated: "2024-07-29"
 
 subcollection: pattern-classic-edge-gateway
 
@@ -19,16 +19,17 @@ version: 1.0
 # See https://test.cloud.ibm.com/docs/get-coding?topic=get-coding-deploy-button
 # deployment-url:
 
-docs: /docs/pattern-sap-on-powervs
+docs: /docs/pattern-classic-edge-gateway
 
 content-type: reference-architecture
-
 ---
 
 {{site.data.keyword.attribute-definition-list}}
 
 # Reference Architecture
 {: #reference-architecture}
+{: toc-content-type="reference-architecture"}
+{: toc-version="1.0"}
 
 This reference architecture is used to force all network traffic to flow through the classic firewall or gateway appliance for inspection before going to the downstream workloads within {{site.data.keyword.cloud_notm}}.
 
