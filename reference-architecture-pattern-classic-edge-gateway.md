@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2024
-lastupdated: "2024-07-26"
+lastupdated: "2024-07-29"
 
 subcollection: pattern-classic-edge-gateway
 
@@ -21,7 +21,7 @@ version: 1.0
 
 docs: /docs/pattern-classic-edge-gateway
 
-content-type: reference-architecture
+content-type: deployment
 ---
 
 {{site.data.keyword.attribute-definition-list}}
