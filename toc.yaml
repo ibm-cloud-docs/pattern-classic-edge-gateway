@@ -9,7 +9,7 @@ toc:
     # use-case: use-case-value
     # compliance: compliance-value
     audience: solution
-    content-type: reference-architecture
+    content-type: deployment
     href: /docs/pattern-classic-edge-gateway
     path: pattern-classic-edge-gateway
     description: Extending your enterprise network to IBM Cloud
