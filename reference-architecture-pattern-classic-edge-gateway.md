@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2024
-lastupdated: "2024-07-29"
+lastupdated: "2024-08-27"
 
 subcollection: pattern-classic-edge-gateway
 
@@ -11,13 +11,7 @@ keywords: network, VPC, PowerVS, Classic edge gateway
 authors:
 - name: Vickie Hooper
 
-# The release that the reference architecture describes
 version: 1.0
-
-# Use if the reference architecture has deployable code.
-# Value is the URL to land the user in the IBM Cloud catalog details page for the deployable architecture.
-# See https://test.cloud.ibm.com/docs/get-coding?topic=get-coding-deploy-button
-# deployment-url:
 
 docs: /docs/pattern-classic-edge-gateway
 
@@ -26,8 +20,8 @@ content-type: reference-architecture
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Reference Architecture
-{: #reference-architecture}
+# Extending your enterprise network to {{site.data.keyword.cloud_notm}}
+{: #extending-enterprise-network}
 {: toc-content-type="reference-architecture"}
 {: toc-version="1.0"}
 
