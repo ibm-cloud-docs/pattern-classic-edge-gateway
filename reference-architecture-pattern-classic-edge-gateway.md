@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2024
-lastupdated: "2024-08-27"
+lastupdated: "2024-10-09"
 
 subcollection: pattern-classic-edge-gateway
 
@@ -32,7 +32,7 @@ This reference architecture is used to force all network traffic to flow through
 
 This architecture describes on-premises data centers connectivity into {{site.data.keyword.cloud_notm}} classic, with workloads in classic, Power Virtual Server, and Virtual Private Cloud (VPC). The diagram includes examples to show where workload compute instances, proxy servers, and jump servers are located. The following diagram identifies numbers indicating key components in the description.
 
-![Illustrates Classic edge gateway solution architecture](image/classic-edge.svg){: caption="Figure 1. Classic edge gateway solution architecture" caption-side="bottom"}
+![Illustrates Classic edge gateway solution architecture](image/classic-edge.svg){: caption="Classic edge gateway solution architecture" caption-side="bottom"}
 
 
 1.  Client network connectivity from on-premises using redundant Direct Links.
@@ -61,7 +61,7 @@ Following the [{{site.data.keyword.arch_framework}}](/docs/architecture-framewor
 - **Resiliency:** High Availability, Disaster Recovery
 - **Service management:** Monitoring, Logging, Auditing, Alerting, Event Management
 
-![illustrates a detailed network and component architecture for a Classic edge gateway solution architecture](image/Heat-map.svg){: caption="Figure 2. Classic edge gateway design scope" caption-side="bottom"}
+![illustrates a detailed network and component architecture for a Classic edge gateway solution architecture](image/Heat-map.svg){: caption="Classic edge gateway design scope" caption-side="bottom"}
 
 The Architecture Framework provides a consistent approach to design cloud solutions by addressing requirements across a set of "aspects" and "domains", which are technology-agnostic architectural areas that need to be considered for any enterprise solution. For more information, see [Introduction to the {{site.data.keyword.arch_framework}}](/docs/architecture-framework?topic=architecture-framework-intro).
 
@@ -83,7 +83,7 @@ The following aspects represent a baseline set of requirements that are applicab
 | Resiliency         | Multi-region capability to support a disaster recovery strategy and solution that allows all production applications to be included by using cloud infrastructure disaster recovery strategies.                                                                                                      |
 | Service management | Provide health and system monitoring with ability to monitor and correlate performance metrics and events and provide alerting across applications and infrastructure.                                                                                                                               |
 |                    | Ability to diagnose issues and exceptions and identify error source                                                                                                                                                                                                                                  |
-{: caption="Table 1. Classic edge gateway requirements"}
+{: caption="Classic edge gateway requirements"}
 
 ## Components
 {: #components}
@@ -111,4 +111,4 @@ The following aspects represent a baseline set of requirements that are applicab
 |                        | [IBM Cloud Log Analysis](/docs/log-analysis?topic=log-analysis-getting-started#getting-started)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Used to manage the operating system logs, application logs, and platform logs in the {{site.data.keyword.cloud_notm}}                                                      |
 |                        | [IBM Cloud Activity Tracker](/docs/activity-tracker?topic=activity-tracker-getting-started)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Used to capture and monitor activities in your {{site.data.keyword.cloud_notm}} account                                                                                |
 |                        | [IBM Cloud Logs](/docs/cloud-logs?topic=cloud-logs-getting-started)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Logging service providing users with capabilities for querying, tailing, and visualizing logs.                                                  |
-{: caption="Table 2. Classic edge gateway solution components"}
+{: caption="Classic edge gateway solution components"}
