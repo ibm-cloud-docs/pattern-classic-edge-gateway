@@ -24,7 +24,7 @@
 },
   "section_architectures": [
     {
-      "title": "xtending your enterprise network to IBM Cloud",
+      "title": "Extending your enterprise network to IBM Cloud",
       "href": "/docs/pattern-classic-edge-gateway?topic=pattern-classic-edge-gateway-overview",
       "deployable": false
     }
