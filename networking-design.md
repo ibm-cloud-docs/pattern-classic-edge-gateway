@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2024
-lastupdated: "2024-06-19"
+lastupdated: "2024-10-09"
 
 subcollection: pattern-classic-edge-gateway
 
@@ -71,7 +71,7 @@ Explore and compare [gateway options](/docs/fortigate-10g?topic=fortigate-10g-ex
 
 GRE tunnels support the Bring Your Own IP (BYOIP) requirement.
 
-![Illustrates the details of GRE for a Classic edge gateway solution architecture](image/GRE.svg){: caption="Figure 1. Classic edge gateway GRE Encapsulation" caption-side="bottom"}
+![Illustrates the details of GRE for a Classic edge gateway solution architecture](image/GRE.svg){: caption="Classic edge gateway GRE Encapsulation" caption-side="bottom"}
 
 1.  Client network connectivity from on-premises is accomplished through Direct Link access.
 2.  A gateway is deployed in classic, which provides routing and security functions.
@@ -224,7 +224,7 @@ Verify that [Private service endpoints](/docs/account?topic=account-vrf-service-
 Verify that cloud services are VPE for VPC [enabled](/docs/vpc?topic=vpc-vpe-supported-services#vpe-enabled-supported-services).
 {: note}
 
-![Illustrates SE versus {{site.data.keyword.vpe_short}} for Classic edge gateway solution architecture](image/SE-vs-VPE.svg){: caption="Figure 2. Classic edge gateway service endpoint access" caption-side="bottom"}
+![Illustrates SE versus {{site.data.keyword.vpe_short}} for Classic edge gateway solution architecture](image/SE-vs-VPE.svg){: caption="Classic edge gateway service endpoint access" caption-side="bottom"}
 
 ## Cloud Internet Services (CIS)
 {: #CIS}

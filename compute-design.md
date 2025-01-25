@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2024
-lastupdated: "2024-06-19"
+lastupdated: "2024-10-09"
 
 subcollection: pattern-classic-edge-gateway
 
@@ -49,7 +49,7 @@ Table 1 contains general sizing guidelines for jump server and bastion host for 
 | Low         | 10-20                | 1-2 Cores CPU; 2-4 GB Memory  |
 | Moderate    | 30-50                | 2-4 Cores CPU; 4-8 GB Memory  |
 | High        | 50+                  | 4-8 Cores CPU; 8-16 GB Memory |
-{: caption="Table 1. Classic edge gateway Bastion Server sizing"}
+{: caption="Classic edge gateway Bastion Server sizing"}
 
 The jump server or bastion host can be deployed on either a {{site.data.keyword.baremetal_short_sing}} or {{site.data.keyword.BluVirtServers_short}} Instance (VSI) within the classic environment. This pattern uses a VSI to deploy a bastion host.
 

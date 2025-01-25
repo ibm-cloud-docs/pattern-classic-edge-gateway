@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2024
-lastupdated: "2024-06-19"
+lastupdated: "2024-10-09"
 
 subcollection: pattern-classic-edge-gateway
 
@@ -52,7 +52,7 @@ This pattern includes two {{site.data.keyword.dl_short}} connect circuits to mee
 
 In the multi-region deployment pattern, a second region is chosen within {{site.data.keyword.cloud_notm}} for disaster recovery.
 
-![Illustrates a detailed network and component architecture for a multi-region classic edge gateway solution architecture](image/cross-region.svg){: caption="Figure 1. Classic edge gateway Multi Region View" caption-side="bottom"}
+![Illustrates a detailed network and component architecture for a multi-region classic edge gateway solution architecture](image/cross-region.svg){: caption="Classic edge gateway Multi Region View" caption-side="bottom"}
 
 1.  Optional network path is accomplished through site-to-site VPN terminated on a classic gateway.
 2.  Client network connectivity from on-premises using Direct Link.

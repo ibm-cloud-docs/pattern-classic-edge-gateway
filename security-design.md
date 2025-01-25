@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2024
-lastupdated: "2024-06-19"
+lastupdated: "2024-10-09"
 
 subcollection: pattern-classic-edge-gateway
 
@@ -134,4 +134,4 @@ The following table helps determine whether a bastion host or jumper server is n
 | Purpose        | Manage internal systems                                               | Grant controlled access to specific internal systems for external users |
 | Security Focus | Centralized access control, which is simplified administration                 | Secure entry point, isolation of internal systems                       |
 | Attack Surface | Higher (internal systems directly exposed if jump server compromised) | Lower (internal systems protected even if the bastion host is compromised)     |
-{: caption="Table 2. Classic edge gateway Jump Server vs Bastion Host Matrix"}
+{: caption="Classic edge gateway Jump Server vs Bastion Host Matrix"}
