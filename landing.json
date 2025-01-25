@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "title": "Extending your enterprise network to IBM Cloud",
+  "introduction":"This is a landing page for the reference architecture describing how to extend your enterprise network to IBM Cloud with a classic transit firewall. It includes disaster recovery and resiliency",
+  "section_topics": {
+  "links": [
+    {
+      "title": "Overview",
+      "href": "/docs/pattern-classic-edge-gateway?topic=pattern-classic-edge-gateway-overview"
+    },
+    {
+      "title": "Reference Architecture",
+      "href": "/docs/pattern-classic-edge-gateway?topic=pattern-classic-edge-gateway-extending-enterprise-network#architecture-diagram"
+    },
+    {
+      "title": "Planning",
+      "href": "/docs/pattern-classic-edge-gateway?topic=pattern-classic-edge-gateway-compute-design#workload-hosts"
+    },
+    {
+      "title": "Architecture",
+      "href": "/docs/pattern-classic-edge-gateway?topic=pattern-classic-edge-gateway-AD-compute"
+    }
+  ]
+},
+  "section_architectures": [
+    {
+      "title": "xtending your enterprise network to IBM Cloud",
+      "href": "/docs/pattern-classic-edge-gateway?topic=pattern-classic-edge-gateway-overview",
+      "deployable": false
+    }
+  ]
+ }

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024, 2024
-lastupdated: "2024-07-26"
+  years: 2024, 2025
+lastupdated: "2025-01-25"
 
 subcollection: pattern-classic-edge-gateway
 
@@ -32,9 +32,9 @@ More advanced monitoring capabilities such as troubleshooting, events and alerts
 
 Examine what logs are required for troubleshooting and auditing, as well as the retention policy necessary to meet the audit and compliance requirements.
 
-{{site.data.keyword.loganalysislong_notm}} can be used to manage to operate system logs, application logs, and platform logs in the {{site.data.keyword.cloud_notm}}. {{site.data.keyword.loganalysislong_notm}} offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs.
+{{site.data.keyword.logs_full_notm}} can be used to manage to operate system logs, application logs, and platform logs in the {{site.data.keyword.cloud_notm}}. {{site.data.keyword.logs_full_notm}} offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs.
 
-For more information, see [Getting started with {{site.data.keyword.loganalysislong_notm}}](/docs/log-analysis?topic=log-analysis-getting-started#getting-started).
+For more information, see [Getting started with {{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-getting-started).
 
 ## Activity Tracking
 {: #activity-tracker}
@@ -42,6 +42,6 @@ For more information, see [Getting started with {{site.data.keyword.loganalysisl
 {{site.data.keyword.cloudaccesstraillong_notm}} services are deprecated and will no longer be supported as of 30 March 2025. The replacement service, {{site.data.keyword.logs_full_notm}} is planned to be generally available in late 2024. For more information, see [Getting started with {{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-getting-started).
 {: attention}
 
-Consider the need to record and monitor the activities and changes made inside the {{site.data.keyword.cloud_notm}} account to help investigating abnormal activity, critical actions, and to meet regulatory audit requirements. {{site.data.keyword.cloudaccesstraillong_notm}} monitors and manages activities in the {{site.data.keyword.cloud_notm}}. It provides a dashboard and notification for real-time monitoring. For more information, see [Getting started with {{site.data.keyword.cloudaccesstraillong_notm}}](/docs/activity-tracker?topic=activity-tracker-getting-started).
+Consider the need to record and monitor the activities and changes made inside the {{site.data.keyword.cloud_notm}} account to help investigating abnormal activity, critical actions, and to meet regulatory audit requirements. {{site.data.keyword.logs_full_notm}} monitors and manages activities in the {{site.data.keyword.cloud_notm}}. It provides a dashboard and notification for real-time monitoring. For more information, see [Getting started with {{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-getting-started).
 
 Alternatively, third-party software such as Splunk and Datadog can be integrated with {{site.data.keyword.cloud_notm}} to provide security monitoring, compliance reporting, and operational intelligence.
