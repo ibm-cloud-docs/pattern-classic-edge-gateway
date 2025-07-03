@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2025
-lastupdated: "2025-01-25"
+lastupdated: "2025-07-03"
 
 subcollection: pattern-classic-edge-gateway
 
@@ -24,11 +24,8 @@ Evaluate the level of monitoring required by considering the workload criticalit
 
 More advanced monitoring capabilities such as troubleshooting, events and alerts, and custom dashboards can be used by integrating the cloud resources with the cloud native service {{site.data.keyword.monitoringfull_notm}}. For more information, see [{{site.data.keyword.monitoringfull_notm}}](/docs/monitoring?topic=monitoring-getting-started#getting-started).
 
-## Log Analysis
-{: #log-analysis}
-
-{{site.data.keyword.loganalysislong_notm}} is deprecated and will no longer be supported as of 30 March 2025. The replacement service, {{site.data.keyword.logs_full_notm}} is planned to be generally available in late 2024. For more information, see [Getting started with {{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-getting-started).
-{: attention}
+## Logging
+{: #logging}
 
 Examine what logs are required for troubleshooting and auditing, as well as the retention policy necessary to meet the audit and compliance requirements.
 
@@ -37,10 +34,7 @@ Examine what logs are required for troubleshooting and auditing, as well as the 
 For more information, see [Getting started with {{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-getting-started).
 
 ## Activity Tracking
-{: #activity-tracker}
-
-{{site.data.keyword.cloudaccesstraillong_notm}} services are deprecated and will no longer be supported as of 30 March 2025. The replacement service, {{site.data.keyword.logs_full_notm}} is planned to be generally available in late 2024. For more information, see [Getting started with {{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-getting-started).
-{: attention}
+{: #activity-tracking}
 
 Consider the need to record and monitor the activities and changes made inside the {{site.data.keyword.cloud_notm}} account to help investigating abnormal activity, critical actions, and to meet regulatory audit requirements. {{site.data.keyword.logs_full_notm}} monitors and manages activities in the {{site.data.keyword.cloud_notm}}. It provides a dashboard and notification for real-time monitoring. For more information, see [Getting started with {{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-getting-started).
 
